@@ -17,6 +17,6 @@
 //will liekly need to convert longitude and latitude into one element  
 //plot the current longitude and latitude on a mapbox map and present it to user in an iframe
 
-
+//
 
 
