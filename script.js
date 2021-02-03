@@ -1,6 +1,3 @@
-var nasaURL =
-
-
 //Primary Functions
 //User wants to see where the space station currently is, and when it will pass over their region in North America  
 //The current location of the space station will be plotted on a mapbox map
