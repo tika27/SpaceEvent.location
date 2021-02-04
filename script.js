@@ -30,14 +30,9 @@ var nasaURL =
         //returns coordinates 
         var coord = "https://api.wheretheiss.at/v1/coordinates"
 
+        
 
-
-        $.ajax(){
-            url: queryURL,
-                method: "GET"
-        }.then(function (data)){
-
-        }
+      
 
     }
 
