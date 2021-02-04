@@ -16,3 +16,11 @@
 nav {
   background-color: rgb(29, 29, 218);
 }
+
+#map {
+  float: right;
+  width: 550px;
+  height: 450px;
+  margin: 10px;
+  border: solid black 5px;
+}
