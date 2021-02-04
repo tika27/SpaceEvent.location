@@ -42,7 +42,6 @@
 
       <br><br>
       <!-- Dropdown Trigger -->
-
       <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>--Select Region--</a>
 
       
@@ -101,6 +100,8 @@
             var marker = new mapboxgl.Marker()
               .setLngLat([response.longitude, response.latitude])
               .addTo(map);
+
+              map.addControl(new mapboxgl.NavigationControl());
 
 
             // $.ajax({
@@ -222,7 +223,9 @@
         <!--  Scripts-->
         <script src="js/materialize.js"></script>
         <script src="js/init.js"></script>
-        >>>>>>> main
+        <script src="js/frontend.js"></script>
+
+     
 
 </body>
 
