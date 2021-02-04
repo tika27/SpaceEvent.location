@@ -10,7 +10,7 @@
   padding: 0 15px;
 }
 .icon-block .material-icons {
-	font-size: inherit;
+  font-size: inherit;
 }
 
 nav {
@@ -23,4 +23,9 @@ nav {
   height: 450px;
   margin: 10px;
   border: solid black 5px;
+}
+
+.dropdown-content {
+  width: max-content !important;
+  height: auto !important;
 }
