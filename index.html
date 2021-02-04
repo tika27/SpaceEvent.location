@@ -16,6 +16,7 @@
 </head>
 
 <body>
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <nav>
     <div class="nav-wrapper">
       <a href="#" class="brand-logo center">Find ISS</a>
@@ -28,14 +29,61 @@
   </nav>
   <!-- <div class="section no-pad-bot" id="index-banner"> -->
   <div class="container">
+
     <div id='map' style='width: 400px; height: 300px;'></div>
+
+
     <script>
-      mapboxgl.accessToken = 'pk.eyJ1IjoibXJpdmVyYTAwMTQiLCJhIjoiY2trb2djd2xsMWY4ZTJvb2NrazR1OWhubyJ9.dJuyUVFQPjftappswi2y2g';
-      var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11'
-      });
+      // var eastCoast = [39.833851, -74.871826];
+      //   var midWest = [38.627003, -90.199402];
+      //   var centralUs = [40.758701, -111.876183];
+      //   var westCoast = [37.773972, -122.431297]
+
+
+
+
+        var queryURL = 'https://api.wheretheiss.at/v1/satellites/25544'
+
+        $.ajax({
+
+          url: queryURL,
+          method: 'GET'
+
+        }).then(function (response) {
+
+          console.log(response.longitude)
+
+
+          mapboxgl.accessToken = 'pk.eyJ1IjoibGF2aW5hOTEiLCJhIjoiY2trcjJuZ29uMDRlcTJubng0djRwNGZ5YiJ9.BtYL1IoJPknYjBxo5N6vKA';
+          var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [response.longitude, response.latitude]
+          });
+
+          var marker = new mapboxgl.Marker()
+            .setLngLat([response.longitude, response.latitude])
+            .addTo(map);
+
+
+          // $.ajax({
+
+          //   url: 'https://api.wheretheiss.at/v1/coordinates/' + response.latitude + ',' +  response.longitude,
+          //   method: 'GET'
+
+          // }).then(function(data){
+
+          //   console.log(data)
+          // })
+
+        })
+
+
+
+
+     
     </script>
+
 
     <br><br>
     <h1 class="header center orange-text">Starter Template</h1>
@@ -138,7 +186,6 @@
 
 
   <!--  Scripts-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
 
