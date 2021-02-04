@@ -28,6 +28,15 @@
   </nav>
   <!-- <div class="section no-pad-bot" id="index-banner"> -->
   <div class="container">
+    <div id='map' style='width: 400px; height: 300px;'></div>
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoibXJpdmVyYTAwMTQiLCJhIjoiY2trb2djd2xsMWY4ZTJvb2NrazR1OWhubyJ9.dJuyUVFQPjftappswi2y2g';
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11'
+      });
+    </script>
+
     <br><br>
     <h1 class="header center orange-text">Starter Template</h1>
     <div class="row center">
