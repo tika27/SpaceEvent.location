@@ -30,9 +30,9 @@ var nasaURL =
         //returns coordinates 
         var coord = "https://api.wheretheiss.at/v1/coordinates"
 
-        
 
-      
+
+
 
     }
 
@@ -49,7 +49,7 @@ var nasaURL =
 
 //create an event listener with a drop down menu of the different variables and a submit button
 //on click retreive the selected variable (*also add an event prevent default function) then execute the first function:
- 
+
 //query the ISS API by using boiler plate AJAX 
 //if the object is received, access the current longitude and latitude data and store them as a variable 
 //will liekly need to convert longitude and latitude into one element  
