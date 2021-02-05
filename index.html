@@ -35,13 +35,6 @@
     <div class="row">
       <div class="col s6"></div>
       <div id='map'></div>
-      <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoibXJpdmVyYTAwMTQiLCJhIjoiY2trb2djd2xsMWY4ZTJvb2NrazR1OWhubyJ9.dJuyUVFQPjftappswi2y2g';
-        var map = new mapboxgl.Map({
-          container: 'map',
-          style: 'mapbox://styles/mapbox/streets-v11'
-        });
-      </script>
 
       <br><br>
       <!-- Dropdown Trigger -->
@@ -81,43 +74,43 @@
 
 
 
-          var queryURL = 'https://api.wheretheiss.at/v1/satellites/25544'
+          // var queryURL = 'https://api.wheretheiss.at/v1/satellites/25544'
 
-          $.ajax({
+          // $.ajax({
 
-            url: queryURL,
-            method: 'GET'
+          //   url: queryURL,
+          //   method: 'GET'
 
-          }).then(function (response) {
+          // }).then(function (response) {
 
-            console.log(response.longitude)
-
-
-            mapboxgl.accessToken = 'pk.eyJ1IjoibGF2aW5hOTEiLCJhIjoiY2trcjJuZ29uMDRlcTJubng0djRwNGZ5YiJ9.BtYL1IoJPknYjBxo5N6vKA';
-            var map = new mapboxgl.Map({
-              container: 'map',
-              style: 'mapbox://styles/mapbox/streets-v11',
-              center: [response.longitude, response.latitude]
-            });
-
-            var marker = new mapboxgl.Marker()
-              .setLngLat([response.longitude, response.latitude])
-              .addTo(map);
-
-            map.addControl(new mapboxgl.NavigationControl());
+          //   console.log(response.longitude)
 
 
-            // $.ajax({
+          //   mapboxgl.accessToken = 'pk.eyJ1IjoibGF2aW5hOTEiLCJhIjoiY2trcjJuZ29uMDRlcTJubng0djRwNGZ5YiJ9.BtYL1IoJPknYjBxo5N6vKA';
+          //   var map = new mapboxgl.Map({
+          //     container: 'map',
+          //     style: 'mapbox://styles/mapbox/streets-v11',
+          //     center: [response.longitude, response.latitude]
+          //   });
 
-            //   url: 'https://api.wheretheiss.at/v1/coordinates/' + response.latitude + ',' +  response.longitude,
-            //   method: 'GET'
+          //   var marker = new mapboxgl.Marker()
+          //     .setLngLat([response.longitude, response.latitude])
+          //     .addTo(map);
 
-            // }).then(function(data){
+          //   map.addControl(new mapboxgl.NavigationControl());
 
-            //   console.log(data)
-            // })
 
-          })
+          //   // $.ajax({
+
+          //   //   url: 'https://api.wheretheiss.at/v1/coordinates/' + response.latitude + ',' +  response.longitude,
+          //   //   method: 'GET'
+
+          //   // }).then(function(data){
+
+          //   //   console.log(data)
+          //   // })
+
+          // })
 
 
 
@@ -251,6 +244,7 @@
         <script src="js/materialize.js"></script>
         <script src="js/init.js"></script>
         <script src="js/frontend.js"></script>
+        <script src="script.js"></script>
 
 
 
