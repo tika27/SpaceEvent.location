@@ -38,12 +38,13 @@ h2 {
   color: white;
 }
 
-ul:not(.browser-default)>li {
-  list-style-type: circle ;
+ul:not(.browser-default) > li {
+  list-style-type: circle;
   text-align: center;
   list-style-position: inside;
   color: white;
 }
+<<<<<<< HEAD
 
 .card {
   background-color: darkgray;
