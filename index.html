@@ -18,6 +18,7 @@
 
 <body>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!-- Navbar -->
   <nav>
     <div class="nav-wrapper">
       <a href="#" class="brand-logo center">Find ISS</a>
@@ -37,9 +38,6 @@
       <br><br>
       <!-- Dropdown Trigger -->
       <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>--Select Region--</a>
-
-
-
       <!-- Dropdown Structure -->
       <ul id='dropdown1' class='dropdown-content'>
         <li><a href="#!">East Coast</a></li>
@@ -50,73 +48,7 @@
         <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
       </ul>
 
-
-
-      <!-- <h1 class="header center orange-text">Starter Template</h1>
-      <div class="row center">
-        <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
-      </div>
-      <div class="row center">
-        <a href="http://materializecss.com/getting-started.html" id="download-button"
-          class="btn-large waves-effect waves-light orange">Get Started</a>
-      </div>
-      <br><br>
-    </div> -->
       <div class="container">
-        <script>
-          // var eastCoast = [39.833851, -74.871826];
-          //   var midWest = [38.627003, -90.199402];
-          //   var centralUs = [40.758701, -111.876183];
-          //   var westCoast = [37.773972, -122.431297]
-
-
-
-
-          // var queryURL = 'https://api.wheretheiss.at/v1/satellites/25544'
-
-          // $.ajax({
-
-          //   url: queryURL,
-          //   method: 'GET'
-
-          // }).then(function (response) {
-
-          //   console.log(response.longitude)
-
-
-          //   mapboxgl.accessToken = 'pk.eyJ1IjoibGF2aW5hOTEiLCJhIjoiY2trcjJuZ29uMDRlcTJubng0djRwNGZ5YiJ9.BtYL1IoJPknYjBxo5N6vKA';
-          //   var map = new mapboxgl.Map({
-          //     container: 'map',
-          //     style: 'mapbox://styles/mapbox/streets-v11',
-          //     center: [response.longitude, response.latitude]
-          //   });
-
-          //   var marker = new mapboxgl.Marker()
-          //     .setLngLat([response.longitude, response.latitude])
-          //     .addTo(map);
-
-          //   map.addControl(new mapboxgl.NavigationControl());
-
-
-          //   // $.ajax({
-
-          //   //   url: 'https://api.wheretheiss.at/v1/coordinates/' + response.latitude + ',' +  response.longitude,
-          //   //   method: 'GET'
-
-          //   // }).then(function(data){
-
-          //   //   console.log(data)
-          //   // })
-
-          // })
-
-
-
-
-
-        </script>
-
-
         <br><br>
         <h1 class="header center">About ISS</h1>
         <p class="slider-holder">
@@ -142,69 +74,70 @@
             <li class="facts">The ISS travels at the speed of five miles per second</li>
             <li class="facts">A spacecraft can arrive at the space station in about four hours after launching from
               Earth </li>
-
           </ul>
-
-
         </div>
+        <br>
+        <br>
 
-        <div class="container">
-          <div class="section">
-
-            <!--   Icon Section   -->
-            <div class="row">
-              <div class="col s12 m4">
-                <div class="icon-block">
-                  <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-                  <h5 class="center">Speeds up development</h5>
-
-                  <p class="light">We did most of the heavy lifting for you to provide a default stylings that
-                    incorporate
-                    our
-                    custom components. Additionally, we refined animations and transitions to provide a smoother
-                    experience
-                    for developers.</p>
-                </div>
+        <!-- <div class="container"> -->
+        <div class="section">
+          <!--   Card Section   -->
+          <div class="col s4">
+            <div class="card">
+              <div class="card-image">
+                <img src="assets/iss064e016368.jpg">
+                <!-- <span class="card-title">Card Title</span> -->
               </div>
-
-              <div class="col s12 m4">
-                <div class="icon-block">
-                  <h2 class="center light-blue-text"><i class="material-icons">group</i></h2>
-                  <h5 class="center">User Experience Focused</h5>
-
-                  <p class="light">By utilizing elements and principles of Material Design, we were able to create a
-                    framework
-                    that incorporates components and animations that provide more feedback to users. Additionally, a
-                    single
-                    underlying responsive system across all platforms allow for a more unified user experience.</p>
-                </div>
+              <div class="card-content">
+                <p>The International Space Station is allowing us to prepare for future deep space journeys.</p>
               </div>
-
-              <div class="col s12 m4">
-                <div class="icon-block">
-                  <h2 class="center light-blue-text"><i class="material-icons">settings</i></h2>
-                  <h5 class="center">Easy to work with</h5>
-
-                  <p class="light">We have provided detailed documentation as well as specific code examples to help
-                    new
-                    users
-                    get started. We are also always open to feedback and can answer any questions a user may have
-                    about
-                    Materialize.</p>
+              <div class="card-action">
+                <a href="https://www.nasa.gov/mission_pages/station/research/news/15_ways_iss_benefits_earth">Other
+                  Benefits of the ISS</a>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s4">
+              <div class="card">
+                <div class="card-image">
+                  <img src="assets/iss01-389-023_sm.jpg">
+                  <!-- <span class="card-title">Card Title</span> -->
+                </div>
+                <div class="card-content">
+                  <p>Many countries worked together to build and use the Space Station.</p>
+                </div>
+                <div class="card-action">
+                  <a href="https://www.nasa.gov/audience/forstudents/k-4/stories/nasa-knows/what-is-the-iss-k4.html">What
+                    is ISS?</a>
                 </div>
               </div>
             </div>
-
+            <div class="col s4">
+              <div class="card">
+                <div class="card-image cardThree">
+                  <img src="assets/iss064e026978.jpg">
+                  <!-- <span class="card-title">Card Title</span> -->
+                </div>
+                <div class="card-content">
+                  <p>Building the International Space Station was something we could only imagine until the 1940's.</p>
+                </div>
+                <div class="card-action">
+                  <a href="https://www.issnationallab.org/about/iss-timeline/">Learn more here</a>
+                </div>
+              </div>
+            </div>
           </div>
-          <br><br>
-        </div>
 
-        <footer class="page-footer orange">
+        </div>
+        <!-- Footer -->
+        <footer class=" page-footer orange">
           <div class="container">
             <div class="row">
               <div class="col l6 s12">
                 <h5 class="white-text">Company Bio</h5>
-                <p class="grey-text text-lighten-4">We are a team of coding bootcamp students working on this project
+                <p class="grey-text text-lighten-4">We are a team of coding bootcamp students working on this
+                  project
                   to
                   find ISS.</p>
               </div>
@@ -243,7 +176,11 @@
         <script src="js/init.js"></script>
         <script src="js/frontend.js"></script>
         <script src="script.js"></script>
-
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
 
 
 </body>

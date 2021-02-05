@@ -44,3 +44,16 @@ ul:not(.browser-default)>li {
   list-style-position: inside;
   color: white;
 }
+
+.card {
+  background-color: darkgray;
+}
+
+.row .col.s4 {
+  width: 33%;
+  border: whitesmoke solid 1px;
+}
+
+.cardThree {
+  height: 105px;
+}
