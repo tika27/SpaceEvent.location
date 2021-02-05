@@ -24,27 +24,17 @@
 
       <a href="#" class="brand-logo center">International Space station</a>
       <ul id="nav-mobile" class="left hide-on-med-and-down">
-        <li><a href="https://blogs.nasa.gov/spacestation/category/expedition-54/">Where is ISS?</a></li>
-        <li><a href="https://www.nasa.gov/about/index.html">About ISS</a></li>
         <!-- <li><a href=></a></li> not sure if we want something else so leaving it like this for now-->
       </ul>
 
-      <a href="#" class="brand-logo center">Find ISS</a>
-      <ul id="nav-mobile" class="left hide-on-med-and-down"></ul>
+      <!-- <a href="#" class="brand-logo center">Find ISS</a>
+      <ul id="nav-mobile" class="left hide-on-med-and-down"></ul> -->
 
     </div>
   </nav>
 
   <!-- search button -->
-  <p>Search Button:</p>
-  <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
-    <input type="text" placeholder="Search.." name="search2">
-    <button type="submit"><i class="fa fa-search"></i></button>
-  </form>
 
-
-
-  <!-- search button -->
 
   <!-- <div class="section no-pad-bot" id="index-banner"> -->
   <div class="container main">
@@ -53,17 +43,10 @@
       <div id='map'></div>
 
       <br><br>
-      <!-- Dropdown Trigger -->
-      <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>--Select Region--</a>
-      <!-- Dropdown Structure -->
-      <ul id='dropdown1' class='dropdown-content'>
-        <li><a href="#!">East Coast</a></li>
-        <li><a href="#!">Mid-West</a></li>
-        <li class="divider" tabindex="-1"></li>
-        <li><a href="#!">West</a></li>
-        <li><a href="#!"><i class="material-icons">West-Coast</i>four</a></li>
-        <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
-      </ul>
+      <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+        <input type="text" placeholder="Search for city, State" name="search2" id="city-input">
+        <button id="add-city" type="submit"><i class="fa fa-search"></i></button>
+      </form>
 
       <div class="container">
         <br><br>
@@ -108,7 +91,7 @@
               <div class="card-content">
                 <p>The International Space Station is allowing us to prepare for future deep space journeys.</p>
               </div>
-              <div class="card-action">
+              <div class="card-action linkText">
                 <a href="https://www.nasa.gov/mission_pages/station/research/news/15_ways_iss_benefits_earth">Other
                   Benefits of the ISS</a>
               </div>
@@ -124,7 +107,7 @@
                 <div class="card-content">
                   <p>Many countries worked together to build and use the Space Station.</p>
                 </div>
-                <div class="card-action">
+                <div class="card-action linkText">
                   <a href="https://www.nasa.gov/audience/forstudents/k-4/stories/nasa-knows/what-is-the-iss-k4.html">What
                     is ISS?</a>
                 </div>
@@ -139,18 +122,13 @@
                 <div class="card-content">
                   <p>Building the International Space Station was something we could only imagine until the 1940's.</p>
                 </div>
-                <div class="card-action">
+                <div class="card-action linkText">
                   <a href="https://www.issnationallab.org/about/iss-timeline/">Learn more here</a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <!--  Scripts-->
-        <script src="js/materialize.js"></script>
-        <script src="js/init.js"></script>
-        <script src="js/frontend.js"></script>
-        <script src="script.js"></script>
       </div>
     </div>
   </div>
@@ -180,6 +158,11 @@
       </div>
     </div>
   </footer>
+  <!--  Scripts-->
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/frontend.js"></script>
+  <script src="script.js"></script>
   </div>
   </div>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
