@@ -44,7 +44,6 @@ ul:not(.browser-default) > li {
   list-style-position: inside;
   color: white;
 }
-<<<<<<< HEAD
 
 .card {
   background-color: darkgray;
@@ -57,4 +56,12 @@ ul:not(.browser-default) > li {
 
 .cardThree {
   height: 105px;
+}
+
+.page-footer {
+  background-color: rgb(29, 29, 218);
+}
+
+.footerList1 {
+  text-align: left;
 }
