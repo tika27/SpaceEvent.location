@@ -1,4 +1,4 @@
-var query = 'http://api.open-notify.org/iss-pass.json?lat=41&lon=87'
+var query = 'http://api.open-notify.org/iss-pass.json?lat=41&lon=72'
 
 $.ajax({
 
@@ -9,18 +9,21 @@ $.ajax({
 }).then(function (data) {
 
 console.log(data)
-
+//code snippet to convert UNIX timestamp to a date and time 
 var value = data.response[0].risetime
-console.log(value)
-
-var newVal = parseInt(value)
-
-var d = new Date(value);
-
-
-d.toDateString();  
-d.toTimeString(); 
-console.log(d)
+function timeConverter(UNIX_timestamp){
+    var a = new Date(value * 1000);
+    var months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+    var year = a.getFullYear();
+    var month = months[a.getMonth()];
+    var date = a.getDate();
+    var hour = a.getHours();
+    var min = a.getMinutes();
+    var sec = a.getSeconds();
+    var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
+    return time;
+  }
+  console.log(timeConverter());
 
    
 })
