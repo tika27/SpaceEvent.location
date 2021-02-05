@@ -1,5 +1,42 @@
+console.log("hello world")
+// var nasaURL =
+var queryURL = 'https://api.wheretheiss.at/v1/satellites/25544'
 
-var nasaURL =
+$.ajax({
+
+  url: queryURL,
+  method: 'GET'
+
+}).then(function (response) {
+
+  console.log(response.longitude)
+
+
+  mapboxgl.accessToken = 'pk.eyJ1IjoibGF2aW5hOTEiLCJhIjoiY2trcjJuZ29uMDRlcTJubng0djRwNGZ5YiJ9.BtYL1IoJPknYjBxo5N6vKA';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/streets-v11',
+    center: [response.longitude, response.latitude]
+  });
+
+  var marker = new mapboxgl.Marker()
+    .setLngLat([response.longitude, response.latitude])
+    .addTo(map);
+
+  map.addControl(new mapboxgl.NavigationControl());
+
+
+  // $.ajax({
+
+  //   url: 'https://api.wheretheiss.at/v1/coordinates/' + response.latitude + ',' +  response.longitude,
+  //   method: 'GET'
+
+  // }).then(function(data){
+
+  //   console.log(data)
+  // })
+
+})
 
 
     //Primary Functions
@@ -17,24 +54,24 @@ var nasaURL =
     //accsess the 
 
 
-    //function to find iss. not functioning yet
-    function findISS() {
-        //satellite endpoint
-        var queryURL = "https://api.wheretheiss.at/v1/satellites";
-        //returns position, velocity, and other related info about satellite at any given point in time
-        var location = "https://api.wheretheiss.at/v1/satellites/25544"
-        //returns list of positions about satellite w/ timestamps (up to 10)
-        var futureLocations = "https://api.wheretheiss.at/v1/satellites/25544/positions?timestamps=1436029892,1436029902&units=miles"
-        //returns TLE data--predicts location of satellite for given point in time
-        var TLEData = "https://api.wheretheiss.at/v1/satellites/25544/tles"
-        //returns coordinates 
-        var coord = "https://api.wheretheiss.at/v1/coordinates"
+    // //function to find iss. not functioning yet
+    // function findISS() {
+    //     //satellite endpoint
+    //     var queryURL = "https://api.wheretheiss.at/v1/satellites";
+    //     //returns position, velocity, and other related info about satellite at any given point in time
+    //     var location = "https://api.wheretheiss.at/v1/satellites/25544"
+    //     //returns list of positions about satellite w/ timestamps (up to 10)
+    //     var futureLocations = "https://api.wheretheiss.at/v1/satellites/25544/positions?timestamps=1436029892,1436029902&units=miles"
+    //     //returns TLE data--predicts location of satellite for given point in time
+    //     var TLEData = "https://api.wheretheiss.at/v1/satellites/25544/tles"
+    //     //returns coordinates 
+    //     var coord = "https://api.wheretheiss.at/v1/coordinates"
 
 
 
 
 
-    }
+    // }
 
 //Primary Functions
 //User wants to see where the space station currently is, and the date it will pass over their region in North America  
