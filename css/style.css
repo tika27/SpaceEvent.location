@@ -40,11 +40,15 @@ h2 {
 
 ul:not(.browser-default) > li {
   list-style-type: circle;
-  text-align: center;
   list-style-position: inside;
-  color: white;
 }
-<<<<<<< HEAD
+
+.facts {
+  color: white;
+  list-style: circle;
+  text-align: center;
+  list-style-type: circle;
+}
 
 .card {
   background-color: darkgray;
@@ -58,3 +62,17 @@ ul:not(.browser-default) > li {
 .cardThree {
   height: 105px;
 }
+
+.page-footer {
+  padding-top: 0;
+}
+
+.footer {
+   background-color: rgb(29, 29, 218);
+}
+
+.cont-list {
+  color: white;
+  text-align: left;
+}
+
