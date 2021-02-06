@@ -26,111 +26,117 @@
       <ul id="nav-mobile" class="left hide-on-med-and-down">
         <!-- <li><a href=></a></li> not sure if we want something else so leaving it like this for now-->
       </ul>
-
-      <!-- <a href="#" class="brand-logo center">Find ISS</a>
-      <ul id="nav-mobile" class="left hide-on-med-and-down"></ul> -->
-
     </div>
   </nav>
 
   <!-- search button -->
-
-
-  <!-- <div class="section no-pad-bot" id="index-banner"> -->
-  <div class="container main">
+  <div class="main">
     <div class="row">
-      <div class="col s6"></div>
-      <div id='map'></div>
-
-      <br><br>
-      <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
-        <input type="text" placeholder="Search for city, State" name="search2" id="city-input">
-        <button id="add-city" type="submit"><i class="fa fa-search"></i></button>
-      </form>
-
-      <div class="container">
+      <div class="col s3">
         <br><br>
-        <h1 class="header center">About ISS</h1>
-        <p class="slider-holder">
-        <div class="carousel carousel-slider">
-          <a class="carousel-item" href="#one!"><img
-              src="assets/1200px-International_Space_Station_after_undocking_of_STS-132.jpg"></a>
-          <a class="carousel-item" href="#two!"><img src="assets/iss064e020720.jpg"></a>
-          <a class="carousel-item" href="#three!"><img src="assets/iss064e027012.jpg"></a>
-          <a class="carousel-item" href="#four!"><img src="assets/iss064e027217.jpg"></a>
-        </div>
-        <p>The International Space station is a large spacecraft that orbits around Earth. The first piece of the
-          ISS
-          was launched in 1998 and more pieces were added for two years before the station was ready for people. Since
-          November of 2000, the station has been continuously occupied. NASA uses the ISS to learn about living and
-          working in space. We have also learned how to keep a space
-          station working for a long time. This will allow NASA to send humans deeper into space.</p>
-        </p>
-        <div>
-          <h2 class="header center">Fun Facts</h2>
-          <ul>
-            <li class="facts">242 individuals from 19 countries have visited the ISS</li>
-            <li class="facts">In 24 hours the space station makes 16 orbits of Earth</li>
-            <li class="facts">The ISS travels at the speed of five miles per second</li>
-            <li class="facts">A spacecraft can arrive at the space station in about four hours after launching from
-              Earth </li>
-          </ul>
-        </div>
+        <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+          <input type="text" placeholder="Search for city, State" name="search2" id="city-input">
+          <button id="add-city" type="submit">Search<i class="fa fa-search"></i></button>
+        </form>
         <br>
-        <br>
+        <p id="results"></p>
+      </div>
+      <!-- <Map> -->
+      <div class="col s5">
+        <div id='map'></div>
+      </div>
+    </div>
+  </div>
 
-        <!-- <div class="container"> -->
-        <div class="section">
-          <!--   Card Section   -->
+
+
+
+
+
+  <div class="row">
+    <div class="col s6"></div>
+
+    <div class="container article">
+      <br><br>
+      <h1 class="header center">About ISS</h1>
+      <p class="slider-holder">
+      <div class="carousel carousel-slider">
+        <a class="carousel-item" href="#one!"><img
+            src="assets/1200px-International_Space_Station_after_undocking_of_STS-132.jpg"></a>
+        <a class="carousel-item" href="#two!"><img src="assets/iss064e020720.jpg"></a>
+        <a class="carousel-item" href="#three!"><img src="assets/iss064e027012.jpg"></a>
+        <a class="carousel-item" href="#four!"><img src="assets/iss064e027217.jpg"></a>
+      </div>
+      <p>The International Space station is a large spacecraft that orbits around Earth. The first piece of the
+        ISS
+        was launched in 1998 and more pieces were added for two years before the station was ready for people. Since
+        November of 2000, the station has been continuously occupied. NASA uses the ISS to learn about living and
+        working in space. We have also learned how to keep a space
+        station working for a long time. This will allow NASA to send humans deeper into space.</p>
+      </p>
+      <div>
+        <h2 class="header center">Fun Facts</h2>
+        <ul>
+          <li class="facts">242 individuals from 19 countries have visited the ISS</li>
+          <li class="facts">In 24 hours the space station makes 16 orbits of Earth</li>
+          <li class="facts">The ISS travels at the speed of five miles per second</li>
+          <li class="facts">A spacecraft can arrive at the space station in about four hours after launching from
+            Earth </li>
+        </ul>
+      </div>
+      <br>
+      <br>
+      <div class="section">
+        <!--   Card Section   -->
+        <div class="col s4">
+          <div class="card">
+            <div class="card-image">
+              <img src="assets/iss064e016368.jpg">
+              <!-- <span class="card-title">Card Title</span> -->
+            </div>
+            <div class="card-content">
+              <p>The International Space Station is allowing us to prepare for future deep space journeys.</p>
+            </div>
+            <div class="card-action linkText">
+              <a href="https://www.nasa.gov/mission_pages/station/research/news/15_ways_iss_benefits_earth">Other
+                Benefits of the ISS</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
           <div class="col s4">
             <div class="card">
               <div class="card-image">
-                <img src="assets/iss064e016368.jpg">
+                <img src="assets/iss01-389-023_sm.jpg">
                 <!-- <span class="card-title">Card Title</span> -->
               </div>
               <div class="card-content">
-                <p>The International Space Station is allowing us to prepare for future deep space journeys.</p>
+                <p>Many countries worked together to build and use the Space Station.</p>
               </div>
               <div class="card-action linkText">
-                <a href="https://www.nasa.gov/mission_pages/station/research/news/15_ways_iss_benefits_earth">Other
-                  Benefits of the ISS</a>
+                <a href="https://www.nasa.gov/audience/forstudents/k-4/stories/nasa-knows/what-is-the-iss-k4.html">What
+                  is ISS?</a>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col s4">
-              <div class="card">
-                <div class="card-image">
-                  <img src="assets/iss01-389-023_sm.jpg">
-                  <!-- <span class="card-title">Card Title</span> -->
-                </div>
-                <div class="card-content">
-                  <p>Many countries worked together to build and use the Space Station.</p>
-                </div>
-                <div class="card-action linkText">
-                  <a href="https://www.nasa.gov/audience/forstudents/k-4/stories/nasa-knows/what-is-the-iss-k4.html">What
-                    is ISS?</a>
-                </div>
+          <div class="col s4">
+            <div class="card">
+              <div class="card-image cardThree">
+                <img src="assets/iss064e026978.jpg">
+                <!-- <span class="card-title">Card Title</span> -->
               </div>
-            </div>
-            <div class="col s4">
-              <div class="card">
-                <div class="card-image cardThree">
-                  <img src="assets/iss064e026978.jpg">
-                  <!-- <span class="card-title">Card Title</span> -->
-                </div>
-                <div class="card-content">
-                  <p>Building the International Space Station was something we could only imagine until the 1940's.</p>
-                </div>
-                <div class="card-action linkText">
-                  <a href="https://www.issnationallab.org/about/iss-timeline/">Learn more here</a>
-                </div>
+              <div class="card-content">
+                <p>Building the International Space Station was something we could only imagine until the 1940's.</p>
+              </div>
+              <div class="card-action linkText">
+                <a href="https://www.issnationallab.org/about/iss-timeline/">Learn more here</a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
   </div>
   <!-- Footer -->
   <footer class=" page-footer footer">
