@@ -21,9 +21,9 @@ Libraries - JQuery, OpenCage API, Open Notify Api, where is the ISS Api, MapBox 
 
 ![Picture of new city pin and text of when ISS will pass over that city](assets/project12.png)
 
-![Picture of carousel of 4 different ISS pictures](assets\project13.png)
+![Picture of carousel of 4 different ISS pictures](assets/project13.png)
 
-![Picture of additional information of ISS](assets\project14.png)
+![Picture of additional information of ISS](assets/project14.png)
 
 
 ## Contributors 
