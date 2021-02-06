@@ -8,9 +8,11 @@
 body {
   background-color: black;
 }
+
 .icon-block {
   padding: 0 15px;
 }
+
 .icon-block .material-icons {
   font-size: inherit;
 }
@@ -19,12 +21,20 @@ nav {
   background-color: rgb(29, 29, 218);
 }
 
+#add-city {
+  width: 30%;
+}
+
+.searchBar {
+background-color: white;
+}
+
 #map {
   float: right;
   width: 550px;
   height: 450px;
-  margin: 10px;
-  border: solid black 5px;
+  margin-left: 10px;
+  margin-top: 10px;
 }
 
 .dropdown-content {
@@ -36,6 +46,11 @@ h1,
 p,
 h2 {
   color: white;
+}
+
+#results {
+  font-size: 18px;
+  margin-left: 10px;
 }
 
 ul:not(.browser-default) > li {
@@ -79,3 +94,8 @@ ul:not(.browser-default) > li {
 .footerList1 {
   text-align: left;
 }
+
+/* @media only screen and (min-width: 993px)
+{.container {
+  width: 80%
+}} */
