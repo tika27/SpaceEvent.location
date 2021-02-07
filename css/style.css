@@ -21,6 +21,10 @@ nav {
   background-color: rgb(29, 29, 218);
 }
 
+.row. col {
+  fl
+}
+
 #add-city {
   width: 30%;
 }
@@ -30,7 +34,7 @@ background-color: white;
 }
 
 #map {
-  float: right;
+  /* float: right; */
   width: 550px;
   height: 450px;
   margin-left: 10px;
@@ -44,7 +48,8 @@ background-color: white;
 
 h1,
 p,
-h2 {
+h3,
+h4 {
   color: white;
 }
 
@@ -58,25 +63,36 @@ ul:not(.browser-default) > li {
   list-style-position: inside;
 }
 
+.carousel {
+  margin-bottom: 10px;
+}
+
+.carouselBorder {
+  border: whitesmoke solid 5px;
+}
+
 .facts {
   color: white;
   list-style: circle;
   text-align: center;
   list-style-type: circle;
+  font-size: 18px;
 }
 
 .card {
   background-color: darkgray;
 }
 
-.row .col.s4 {
-  width: 33%;
+.cardStyle{
   border: whitesmoke solid 1px;
+
 }
 
 .cardThree {
-  height: 105px;
+  height: 210px;
+  border-color: whitesmoke;
 }
+
 
 .page-footer {
   padding-top: 0;
@@ -95,7 +111,14 @@ ul:not(.browser-default) > li {
   text-align: left;
 }
 
-/* @media only screen and (min-width: 993px)
-{.container {
-  width: 80%
-}} */
+.aboutISS,
+.card-content,
+.bioP,
+.groupNames {
+font-size: 18px;
+}
+
+@media (max-width: 768px)
+{#add-city {
+  width: fit-content;
+}}

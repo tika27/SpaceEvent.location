@@ -85,7 +85,7 @@ $.ajax({
                     return time;
                 }
 
-                console.log('The ISS will pass over ' + city + ' on ' + timeConverter(value));
+                $('#results').text('The ISS will pass over ' + city + ' on ' + timeConverter(value));
 
 
             })
